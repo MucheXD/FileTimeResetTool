@@ -2,7 +2,7 @@
 
 本程序内提供的语言为英语，障碍等级为E(A-F)，即对于非英语为母语者也几乎没有语言障碍。
 
-The language provided within this program is English. To read the instructions in English, please [click here](https://github.com/MucheXD/FileTimeResetTool/Readme.md#English).
+The language provided within this program is English. To read the instructions in English, please [click here](https://github.com/MucheXD/FileTimeResetTool/README.md#English).
 
 出于某种目的想要修改文件的时间属性？本程序可以帮助你更快速的修改文件时间属性。
 
