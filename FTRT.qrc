@@ -1,0 +1,26 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Res/setInput.svg</file>
+        <file>Res/setZero.svg</file>
+        <file>Res/setRandom.svg</file>
+        <file>Res/setInput_selected.svg</file>
+        <file>Res/setRandom_selected.svg</file>
+        <file>Res/setZero_selected.svg</file>
+        <file>Res/next_disabled.svg</file>
+        <file>Res/next_enabled.svg</file>
+        <file>Res/accessed.svg</file>
+        <file>Res/accessed_selected.svg</file>
+        <file>Res/created.svg</file>
+        <file>Res/created_selected.svg</file>
+        <file>Res/modified.svg</file>
+        <file>Res/modified_selected.svg</file>
+        <file>Res/leftarr.svg</file>
+        <file>Res/rightarr.svg</file>
+        <file>Res/random.svg</file>
+        <file>Res/finish.svg</file>
+        <file>Res/failed.svg</file>
+        <file>Res/selectAll.svg</file>
+        <file>Res/selectAll_selected.svg</file>
+        <file>Res/criticalErr.svg</file>
+    </qresource>
+</RCC>

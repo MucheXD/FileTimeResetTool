@@ -1,0 +1,781 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ResetterClass</class>
+ <widget class="QWidget" name="ResetterClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>220</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>10</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Resetter</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #000000;</string>
+  </property>
+  <widget class="QWidget" name="widget_background" native="true">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>500</width>
+     <height>220</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget[isBackground=true]
+{
+	background-color: rgba(255, 255, 255, 0);
+	border-width: 3px;
+	border-color: #ffffff;
+	border-style: solid;
+	border-radius: 0px;
+}</string>
+   </property>
+   <property name="isBackground" stdset="0">
+    <bool>true</bool>
+   </property>
+   <widget class="QPushButton" name="pushButton_close">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>336</x>
+      <y>3</y>
+      <width>80</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	background-color: #aa8e00;
+	color: #ffffff;
+	border-width: 0px;
+	border-style: solid;
+}
+QPushButton:hover
+{
+	background-color: #ccaa00;
+	color: #ffffff;
+	border-width: 0px;
+	border-style: solid;
+}
+QPushButton:disabled
+{
+	background-color:  #c8c8c8;
+	color: #ffffff;
+	border-width: 0px;
+	border-style: solid;
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string>Cancel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_topBar">
+    <property name="geometry">
+     <rect>
+      <x>3</x>
+      <y>3</y>
+      <width>413</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+	padding: 0px 0px 0px 5px;
+	text-align : left;
+	background-color: #ffffff;
+	color: #000000;
+	border-width: 0px;
+	border-style: solid;
+}</string>
+    </property>
+    <property name="text">
+     <string>Collecting File...</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_start">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>416</x>
+      <y>3</y>
+      <width>81</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	background-color: #0047aa;
+	color: #ffffff;
+	border-width: 0px;
+	border-style: solid;
+}
+QPushButton:hover
+{
+	background-color: #0055cc;
+	color: #ffffff;
+	border-width: 0px;
+	border-style: solid;
+}
+QPushButton:disabled
+{
+	background-color: #c8c8c8;
+	color: #ffffff;
+	border-width: 0px;
+	border-style: solid;
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string>Start</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="widget_inner" native="true">
+    <property name="geometry">
+     <rect>
+      <x>3</x>
+      <y>33</y>
+      <width>490</width>
+      <height>180</height>
+     </rect>
+    </property>
+    <widget class="QPushButton" name="pushButton_randomTime">
+     <property name="geometry">
+      <rect>
+       <x>349</x>
+       <y>140</y>
+       <width>100</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{
+	text-align : center;
+	background-color: #ffffff;
+	color: #000000;
+	border-width: 0px;
+	border-radius: 5px;
+	border-style: solid;
+}
+QPushButton:hover
+{
+	background-color: #ebf5ff;
+}
+QPushButton:pressed
+{	
+	background-color: #acd3fa;
+}</string>
+     </property>
+     <property name="text">
+      <string>Random</string>
+     </property>
+     <property name="icon">
+      <iconset resource="FTRT.qrc">
+       <normaloff>:/Res/random.svg</normaloff>:/Res/random.svg</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>16</width>
+       <height>16</height>
+      </size>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+     <property name="autoRepeat">
+      <bool>false</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QWidget" name="widget_mode" native="true">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>285</x>
+       <y>15</y>
+       <width>190</width>
+       <height>120</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{
+	padding: 0px 0px 0px 5px;
+	text-align : left;
+	background-color: #ffffff;
+	color: #000000;
+	border-width: 0px;
+	border-radius: 5px;
+	border-style: solid;
+}
+QPushButton:hover
+{
+	background-color: #ebf5ff;
+}
+QPushButton:checked
+{
+	color: #ffffff;
+	background-color: #0055cc;
+}</string>
+     </property>
+     <widget class="QPushButton" name="pushButton_created">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>30</y>
+        <width>150</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Creation Time</string>
+      </property>
+      <property name="icon">
+       <iconset resource="FTRT.qrc">
+        <normaloff>:/Res/created.svg</normaloff>
+        <normalon>:/Res/created_selected.svg</normalon>:/Res/created.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>16</width>
+        <height>16</height>
+       </size>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="autoRepeat">
+       <bool>false</bool>
+      </property>
+      <property name="autoExclusive">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_modified">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>60</y>
+        <width>150</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Last Modify Time</string>
+      </property>
+      <property name="icon">
+       <iconset resource="FTRT.qrc">
+        <normaloff>:/Res/modified.svg</normaloff>
+        <normalon>:/Res/modified_selected.svg</normalon>:/Res/modified.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>16</width>
+        <height>16</height>
+       </size>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="autoRepeat">
+       <bool>false</bool>
+      </property>
+      <property name="autoExclusive">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_accessed">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>90</y>
+        <width>150</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Last Access Time</string>
+      </property>
+      <property name="icon">
+       <iconset resource="FTRT.qrc">
+        <normaloff>:/Res/accessed.svg</normaloff>
+        <normalon>:/Res/accessed_selected.svg</normalon>:/Res/accessed.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>16</width>
+        <height>16</height>
+       </size>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+      <property name="autoRepeat">
+       <bool>false</bool>
+      </property>
+      <property name="autoExclusive">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_selectAll">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>0</y>
+        <width>150</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+	padding: 0px 0px 0px 5px;
+	text-align : left;
+	background-color: #ffffff;
+	color: #000000;
+	border-width: 0px;
+	border-radius: 5px;
+	border-style: solid;
+}
+QPushButton:hover
+{
+	background-color: #fffceb;
+}
+QPushButton:checked
+{
+	color: #ffffff;
+	background-color: #ccaa00;
+}</string>
+      </property>
+      <property name="text">
+       <string>Select All</string>
+      </property>
+      <property name="icon">
+       <iconset resource="FTRT.qrc">
+        <normaloff>:/Res/selectAll.svg</normaloff>
+        <normalon>:/Res/selectAll_selected.svg</normalon>:/Res/selectAll.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>16</width>
+        <height>16</height>
+       </size>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+      <property name="autoRepeat">
+       <bool>false</bool>
+      </property>
+      <property name="autoExclusive">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="widget_method" native="true">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>15</y>
+       <width>190</width>
+       <height>120</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{
+	padding: 0px 0px 0px 5px;
+	text-align : left;
+	background-color: #ffffff;
+	color: #000000;
+	border-width: 0px;
+	border-radius: 5px;
+	border-style: solid;
+}
+QPushButton:hover
+{
+	background-color: #ebf5ff;
+}
+QPushButton:checked
+{
+	color: #ffffff;
+	background-color: #0055cc;
+}</string>
+     </property>
+     <widget class="QPushButton" name="pushButton_setZero">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>0</y>
+        <width>150</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string> Set Zero</string>
+      </property>
+      <property name="icon">
+       <iconset resource="FTRT.qrc">
+        <normaloff>:/Res/setZero.svg</normaloff>
+        <normalon>:/Res/setZero_selected.svg</normalon>:/Res/setZero.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>16</width>
+        <height>16</height>
+       </size>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="autoRepeat">
+       <bool>false</bool>
+      </property>
+      <property name="autoExclusive">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_setRandom">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>30</y>
+        <width>150</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string> Random All</string>
+      </property>
+      <property name="icon">
+       <iconset resource="FTRT.qrc">
+        <normaloff>:/Res/setRandom.svg</normaloff>
+        <normalon>:/Res/setRandom_selected.svg</normalon>:/Res/setRandom.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>16</width>
+        <height>15</height>
+       </size>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="autoExclusive">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_setInput">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>90</y>
+        <width>150</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string> Input A Time</string>
+      </property>
+      <property name="icon">
+       <iconset resource="FTRT.qrc">
+        <normaloff>:/Res/setInput.svg</normaloff>
+        <normalon>:/Res/setInput_selected.svg</normalon>:/Res/setInput.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>16</width>
+        <height>16</height>
+       </size>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+      <property name="autoRepeat">
+       <bool>false</bool>
+      </property>
+      <property name="autoExclusive">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_randomSet">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>60</y>
+        <width>150</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string> Random A Time</string>
+      </property>
+      <property name="icon">
+       <iconset resource="FTRT.qrc">
+        <normaloff>:/Res/setRandom.svg</normaloff>
+        <normalon>:/Res/setRandom_selected.svg</normalon>:/Res/setRandom.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>16</width>
+        <height>15</height>
+       </size>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="autoExclusive">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="pushButton_next">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>55</y>
+       <width>40</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="FTRT.qrc">
+       <normaloff>:/Res/next_enabled.svg</normaloff>
+       <disabledoff>:/Res/next_disabled.svg</disabledoff>:/Res/next_enabled.svg</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>64</width>
+       <height>64</height>
+      </size>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QDateTimeEdit" name="dateTimeEdit_timeInput">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>44</x>
+       <y>140</y>
+       <width>290</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QDateTimeEdit
+{
+	font: 10pt &quot;Microsoft YaHei UI&quot;;
+	background-color: #ffffff;
+	color: #000000;
+	border-width: 0px;
+	border-radius: 5px;
+	border-style: solid;
+}
+QDateTimeEdit::up-button,QDateTimeEdit::down-button
+{
+	border-style: solid;
+	width:12px;
+	height: 25px;
+}
+QDateTimeEdit::up-button
+{
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	image: url(:/Res/rightarr);
+	subcontrol-position: right;
+}
+QDateTimeEdit::down-button
+{
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	image: url(:/Res/leftarr);
+	subcontrol-position: left;
+}
+QDateTimeEdit::up-button:hover,QDateTimeEdit::down-button:hover
+{
+	background-color: #ebf5ff;
+}
+QDateTimeEdit::up-button:pressed,QDateTimeEdit::down-button:pressed
+{
+	background-color: #acd3fa;
+}
+</string>
+     </property>
+     <property name="wrapping">
+      <bool>true</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="specialValueText">
+      <string/>
+     </property>
+     <property name="minimumDateTime">
+      <datetime>
+       <hour>0</hour>
+       <minute>0</minute>
+       <second>0</second>
+       <year>1970</year>
+       <month>1</month>
+       <day>1</day>
+      </datetime>
+     </property>
+     <property name="maximumDate">
+      <date>
+       <year>9999</year>
+       <month>12</month>
+       <day>31</day>
+      </date>
+     </property>
+     <property name="minimumDate">
+      <date>
+       <year>1970</year>
+       <month>1</month>
+       <day>1</day>
+      </date>
+     </property>
+     <property name="displayFormat">
+      <string>yyyy - MM - dd  |  hh : mm : ss</string>
+     </property>
+     <property name="calendarPopup">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </widget>
+   <zorder>label_topBar</zorder>
+   <zorder>pushButton_close</zorder>
+   <zorder>pushButton_start</zorder>
+   <zorder>widget_inner</zorder>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="FTRT.qrc"/>
+ </resources>
+ <connections/>
+</ui>
